@@ -11,7 +11,7 @@
 $uang		= 60000;
 $harga		= 2500;
 $dapat		= $uang/$harga;
-$bonus		= ($dapat - $dapat%4)/4;
+$bonus		= ($dapat - ($dapat%4))/4;
 $barang 	= $dapat +$bonus;
 
 echo "Jumlah barang yang didapat ".$barang;
