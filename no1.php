@@ -8,17 +8,13 @@
 
 
 <?php 
-
-$uang		= 52500;
+$uang		= 60000;
 $harga		= 2500;
-$pembelian	= 4;
-$bonus		= 1;
-$kelipatan 	= $uang/($harga*4);
-$barang 	= $kelipatan * ($pembelian+$bonus);
-
+$dapat		= $uang/$harga;
+$bonus		= ($dapat - $dapat%4)/4;
+$barang 	= $dapat +$bonus;
 
 echo "Jumlah barang yang didapat ".$barang;
-
 ?>
 
 
