@@ -8,7 +8,7 @@
 
 
 <?php 
-$uang		= 60000;
+$uang		= 50000;
 $harga		= 2500;
 $dapat		= $uang/$harga;
 $bonus		= ($dapat - ($dapat%4))/4;
